@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#778fa2">
+
+
+<com.google.android.material.appbar.AppBarLayout
+    android:id="@+id/app_bar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/app_bar"
+            style="@style/Foxandroid.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Joker APP"
+            app:titleTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="#9fc6e5"/>
+        <ImageView
+            android:id="@+id/imageView_save"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginEnd="9dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/app_bar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_download_for_offline_24" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</com.google.android.material.appbar.AppBarLayout>
+
+    <com.example.stickerview.StickerView
+        android:id="@+id/sticker_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:showBorder="true"
+        app:showIcons="true">
+
+        <ImageView
+            android:id="@+id/imageview1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:scaleType="fitCenter" />
+    </com.example.stickerview.StickerView>
+
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:background="#9fc6e5"
+        >
+
+        <ImageView
+            android:id="@+id/pickImageBtn"
+            android:layout_width="224dp"
+            android:layout_height="50dp"
+
+            android:contentDescription="Gallery"
+            app:srcCompat="@drawable/image_picker" />
+
+        <ImageView
+            android:id="@+id/pickStickerBtn"
+            android:layout_width="198dp"
+            android:layout_height="50dp"
+
+            android:contentDescription="Sticker"
+            app:srcCompat="@drawable/a09" />
+
+
+    </LinearLayout>
+
+    <!--    <HorizontalScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="@android:color/black"-->
+    <!--        android:scrollbars="none"-->
+    <!--        >-->
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            >-->
+    <!--            <Button-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="?attr/selectableItemBackground"-->
+    <!--                android:onClick="reset"-->
+    <!--                android:text="Reset"-->
+    <!--                />-->
+
+    <!--            <Button-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="?attr/selectableItemBackground"-->
+    <!--                android:onClick="testReplace"-->
+    <!--                android:text="Replace"-->
+    <!--                />-->
+
+    <!--            <Button-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="?attr/selectableItemBackground"-->
+    <!--                android:onClick="testRemove"-->
+    <!--                android:text="Remove"-->
+    <!--                />-->
+
+    <!--            <Button-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="?attr/selectableItemBackground"-->
+    <!--                android:onClick="testRemoveAll"-->
+    <!--                android:text="RemoveAll"-->
+    <!--                />-->
+
+    <!--            <Button-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="?attr/selectableItemBackground"-->
+    <!--                android:onClick="testLock"-->
+    <!--                android:text="Lock"-->
+    <!--                />-->
+
+    <!--            <Button-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="?attr/selectableItemBackground"-->
+    <!--                android:onClick="testAdd"-->
+    <!--                android:text="Add"-->
+    <!--                />-->
+
+    <!--        </LinearLayout>-->
+    <!--    </HorizontalScrollView>-->
+</RelativeLayout>
+
