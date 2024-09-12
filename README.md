@@ -19,6 +19,6 @@ Simple Sticker View package
 > dependencies {
 >
 > 
-> 	        implementation 'com.github.jawad440:Sticker_view_red_cliff:Tag'
+> 	        implementation 'com.github.jawad440:Sticker_view_red_cliff:v1.0.0'
 > 	}
 > '''
